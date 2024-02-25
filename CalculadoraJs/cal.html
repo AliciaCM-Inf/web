@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Bases</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calculator">
+  <h2>Calculadora de Bases</h2>
+  <input type="number" id="inputNumber" placeholder="Ingresa un número en base 10">
+  
+  <label for="baseSelector">Selecciona la base:</label>
+  <select id="baseSelector">
+    <option value="2">Binario (base 2)</option>
+    <option value="4">Cuartenario (base 4)</option>
+    <option value="8">Octal (base 8)</option>
+    <option value="16">Hexadecimal (base 16)</option>
+  </select>
+  
+  <button onclick="convertNumber()">Convertir</button>
+
+  <p id="result">Resultado: </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
